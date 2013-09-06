@@ -1,0 +1,50 @@
+@import 'variables'
+@import 'fonts'
+
+.styled-form
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  padding 0% 5% 5%
+
+fieldset
+  border none
+  margin 0 auto
+  background transparent
+  padding 0
+
+normPlaceholdercolor(darken($grey,20), Source Sans, Helvetica, Arial, sans-serif)
+
+label
+  display block
+
+.form-item input,
+.form-item textarea, 
+.form-item button,
+.form-item label
+  font-family 'Source Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+
+#address-form-container
+  display block
+  margin 1.5% 0 2%
+  max-width 880px
+
+#search-form-container
+  vertical-align top
+
+.form-item.first
+  margin 0% auto 2%
+
+.form-item
+  margin 4.5% auto
+
+.form-item.last
+  margin 3.5% auto 0
+
+form .error
+  border $red 4px solid

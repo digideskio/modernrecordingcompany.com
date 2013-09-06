@@ -1,0 +1,297 @@
+@import 'variables'
+@import 'normalize'
+@import 'fonts'
+
+@import 'topcoat-desktop-light'
+@import 'effeckt-autoprefixed'
+
+
+*,
+*:after,
+*:before,
+*::before
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+html, 
+body
+  font-size: 100%
+  font-family: 'Helvetica-Neue', Arial, Helvetica, sans-serif
+  color $white
+  height 100%
+  background-color $black
+
+img
+  max-width 100%
+
+a
+  color: $blue
+  text-decoration none
+
+
+p, li
+  font-size 1.6em
+  margin 0
+  padding 0
+  font-family: 'Source Sans', Helvetica, Arial, sans-serif
+  font-weight 200
+
+nav li
+  font-size 1.2em
+
+
+h1
+  font-size 3.6em
+  font-weight normal
+  line-height 1
+  color lighten($black,30)
+  font-weight normal
+  font-family: 'proxima-sbold', 'Helvetica-Neue', Arial, Helvetica, sans-serif
+
+h2
+  font-size 2.4em
+  font-weight 200
+  line-height 1.1
+  font-family: 'proxima-bold', 'Helvetica-Neue', Arial, Helvetica, sans-serif
+  margin 0
+
+h3
+  font-family: 'proxima-regular', 'Helvetica-Neue', Arial, Helvetica, sans-serif
+
+header
+  position relative
+  overflow hidden
+
+footer
+  background-color $footerColor
+  margin 0% auto
+  text-align center
+  width: 100%
+
+footer p
+  color $white
+  font-size 1.2em
+
+li a 
+  display inline-block
+
+li a img
+  margin 0 5%
+  border 8px solid $white
+
+#nav-container
+  margin 0 auto
+  overflow auto
+  padding 1.75% 0
+
+#logo
+  display inline-block
+  margin 0
+
+#logo-container
+  display inline-block
+  text-align left
+  
+
+#nav-trigger
+  background: transparent url('/img/nav-icon.svg') no-repeat 0% 0%  
+  width 44px
+  height 44px
+  display inline-block
+  float right
+  margin 1% 1% 0 0
+  -webkit-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all
+  -moz-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all
+  -o-transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all
+  transition: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all
+
+.no-touch #nav-trigger:hover
+  -webkit-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+  transform: rotate(90deg)
+
+
+#map-canvas
+  width 100%
+  height 100%
+  min-height 716px
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  vertical-align: top;
+  outline: none;
+  border: 1px solid #a5a8a8;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px rgba(0,0,0,0.12);
+  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+
+#map-canvas img
+  max-width none
+
+#maps-container
+  height 100%
+  overflow auto
+
+#search-form-container
+  padding 0 1% 0 0
+
+#instagram-photos-container ul
+  list-style-type none
+  margin 0
+  padding 0
+  text-align center
+  
+#instagram-photos-container li
+  position: relative;
+  float: left;
+  display: inline;
+  width: 20%;
+  margin: 0;
+
+#results-container
+  margin 1% auto
+  vertical-align top
+
+#instagram-photos-container
+  margin 1% auto
+
+#sync-with-dropbox
+  float right
+  display inline-block
+
+
+.main
+  margin 0 auto
+  padding 0 1%
+
+.showcopylabel
+  margin-top 3.5%
+
+.aligntop
+  vertical-align top
+
+.instagram-list
+  padding 2% 0
+
+.profile-image
+  max-width 75px
+  max-height 75px
+  margin 2% 1% 0 0%
+  borderRadius(10px)
+
+.right
+  float right
+
+.left
+  float left 
+
+.block
+  display block
+
+.none 
+  display none
+
+.inline-block
+  display inline-block
+
+.red
+  color $red
+
+.blue
+  color $blue
+
+.yellow
+  color $yellow
+
+.black
+  color $black
+
+.grey
+  color $grey
+
+.large
+  font-size 150%
+  line-height 0
+
+.larger
+  font-size 200%
+  line-height 0
+
+.largest
+  font-size 300%
+  line-height 0
+
+.ninety
+  width 90%
+
+.ten
+  width 90%
+
+.sixtyfive
+  width 65%
+
+.sixtyfour
+  width 64%
+
+.thirtyfive
+  width 35%
+
+.thirtyfour
+  width 34%
+
+.opacity75
+  normOpacity(75)
+
+.no-touch a:hover
+  color: darken($blue,20)
+
+.louder
+  color $linkColor
+  font-size 1.125em
+
+.maxwidthcenter
+  max-width $maxwidth
+  margin 0 auto
+
+.textcenter
+  text-align center
+
+.justify
+  text-align justify
+
+
+.no-touch a.red:hover
+  color darken($red,20)
+
+.opacity75
+  normOpacity(75)
+
+.clearfix:before,
+.clearfix:after
+  display: table;
+  content: " "
+
+.clearfix:after
+  clear: both
+
+
+canvas {
+  display: block;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+
+
+@import 'responsive'
